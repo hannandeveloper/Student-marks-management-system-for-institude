@@ -1,2 +1,3 @@
 # Student-marks-management-system-for-institude
-python first project
+### This is my first python project.
+I have created it with the basics I learn.
