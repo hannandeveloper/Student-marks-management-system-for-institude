@@ -1,20 +1,30 @@
 try:
-    enteries = int(input("Pls enter the number of enteries:"))
+    entries = int(input("Please enter the number of entries: "))
 except ValueError:
-    print("Enteries must a number not a letter or a symbol")
+    print("Entries must be a number, not a letter or symbol.")
+    entries = 0
 
 
-for i in range(0,enteries):
-    name = input("enter Name :")
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def save(self):
+        with open("marks.txt", "a") as file:
+            file.write(f"{self.name} got {self.marks} marks\n")
+
+
+for _ in range(entries):
+    name = input("Enter name: ")
     try:
-        marks = int(input("enter marks:"))
-        file = open("marks.txt","a")
-        file.write(f"{name} got {marks} marks \n")
-        # file.close()2
+        marks = int(input("Enter marks: "))
+        Student(name, marks).save()
     except ValueError:
-        print("enter a valid number")
+        print("Enter a number.")
         break
 
-file = open("marks.txt","r")
-data = file.read()
+
+with open("marks.txt", "r") as file:
+    data = file.read()
 print(data)

@@ -1,3 +1,10 @@
-j got 0 markss got 3 marks 
-f got 3 marks 
-f got 3 marks 
+a got 33 marks
+b got 43 marks
+c got 533 marks
+d got 34 marks
+e got 55 marks
+f got 334 marks
+g got 345 marks
+h got 3211 marks
+i got 33 marks
+j got 34 marks
