@@ -1,0 +1,6 @@
+step 1 : take input of how many std marks user wants to enter like 10 std
+step 2 : add the value on for loop
+step 3 : then add two input fields  of name and marks 
+step 4 : for marks field use try and give value error
+step 5 : take data from user and store in a marks.txt file with file.write
+step 6 : 
